@@ -1,0 +1,19 @@
+<table class='table'>
+  <thead>
+    <tr>
+      <th></th>
+      <th>グループ名</th>
+      <th>紹介文</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% groups.each do |group| %>
+      <tr>
+        <td><%= image_tag group.get_profile_image, size: '50x50' %></td>
+        <td><%= group.name %></td>
+        <td><%= group.introduction %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
