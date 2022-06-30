@@ -12,6 +12,8 @@ class GroupsController < ApplicationController
   end
 
   def show
+    @book = Book.new
+    @group = Group.find(params[:id])
   end
 
   def index
